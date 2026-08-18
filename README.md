@@ -7,8 +7,7 @@ Includes a personal "My Setup" section listing the addons currently installed on
 ## Structure
 
 - `index.html` — page content
-- `style.css` — dark workbook design system (shared token language with the raid-healer workbook project)
-- `assets/fonts/` — self-hosted, OFL-licensed webfonts (Barlow Condensed, Source Sans 3, Azeret Mono)
+- `style.css` — light, neutral-plus-indigo design system (Archivo / Public Sans / IBM Plex Mono, via Google Fonts)
 - `.github/workflows/pages.yml` — deploys `main` to GitHub Pages on push
 
 ## Updating
