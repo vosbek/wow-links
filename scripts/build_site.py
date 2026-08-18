@@ -256,7 +256,12 @@ videos_total = len(videos)
 tools = [
     ("AwowLab", "https://www.awowlab.com/", "Local Windows log-review tool: builds a 3D replay from log data, an overlay damage meter reading your combat log live, and a pull-comparison view against a Warcraft Logs report. Only touches the network for updates, WCL pulls, or Wowhead lookups.", "Both"),
     ("AwowlabOverlay (source)", "https://github.com/Wobblucy/AwowlabOverlay", "Open-source parser/overlay component behind AwowLab's standalone overlay.", "Both"),
+    ("Warcraft Recorder", "https://github.com/aza547/wow-recorder", "Auto-records boss fights, M+ dungeons, and arenas by watching the combat log, using OBS under the hood for capture. Requires the SimpleCombatLogger addon. Windows only, free and open source.", "Both"),
+    ("Archon App", "https://www.archon.gg/download", "Desktop overlay showing player history and performance data right in Group Finder, plus log upload and analysis in desktop, always-on-top, or in-game display modes.", "Both"),
+    ("Raider.IO Desktop App", "https://raiderioapp.com/", "Keeps the Raider.IO addon updated automatically and adds live tracking of M+ scores and raid progression outside the game.", "Both"),
     ("WowUp", "https://wowup.io", "Free, open-source addon manager — installs and updates addons from CurseForge, Wago, GitHub, and Tukui in one place.", "Both"),
+    ("CurseForge App", "https://www.curseforge.com/download/app", "Official Overwolf-built addon manager — browse, install, and update addons in one click.", "Both"),
+    ("Wago App", "https://addons.wago.io/wagoapp/download", "Centralized updater for addons, UI packs, and WeakAuras-family imports pulled straight from Wago.io.", "Both"),
 ]
 tools_body = single(table3(f"{len(tools)} tools", tools))
 tools_total = len(tools)
