@@ -181,7 +181,8 @@ sites_gearing = [
     ("WoWBiS.gg", "https://wowbis.gg", "Best-in-slot gear planner and loot-priority reference by spec.", "Both"),
     ("MythicSim", "https://mythicsim.com", "Paste your character and get a DPS number plus a ranked list of gear upgrades for M+.", "M+"),
     ("LootPilot", "https://lootpilot.app", "Ranks bonus-roll and loot spending by value per token to maximize upgrades.", "Both"),
-    ("wowaudit", "https://wowaudit.com", "Shared roster view built from uploaded Raidbots reports, showing exact upgrade levels per player.", "Raid"),
+    ("wowaudit", "https://wowaudit.com", "Guild roster audit pulled from Blizzard's API — gear, enchants, gems, Vault progress, and M+ completion per player, plus raid attendance tracking.", "Raid"),
+    ("Questionably Epic Live", "https://questionablyepic.com/live/", "Healer gearing and theorycrafting app covering every healer spec — models gear sets, stat weights, and Top Gear recommendations.", "Both"),
     ("Bloodmallet", "https://bloodmallet.com", "Pre-computed SimC charts ranking trinkets, talents, and tier combos per spec with zero setup.", "Both"),
     ("WoW Codex — Crest Calculator", "https://www.wow-codex.de/gadgets/crestcalculator?lang=en", "Plans crest costs and upgrade steps, and converts them into how many M+ or delves you need to run.", "Both"),
     ("For The Ilvl", "https://for-the-ilvl.com", "Ranks Mythic+ dungeons by item-level upgrade chance to prioritize which keys to run.", "M+"),
@@ -192,7 +193,9 @@ sites_planning = [
     ("Mythic Planner", "https://mythicplanner.com", "Calculates which key levels you need to run to hit a target Mythic+ rating.", "M+"),
     ("CadenceMDR", "https://cadencemdr.com/", "Shows top-parse cooldown timelines per boss and spec in M+; export your own plan to the companion addon.", "M+"),
     ("RaidPlan.io", "https://raidplan.io", "Visual boss-arena positioning and strategy planner you can share as a link.", "Raid"),
+    ("Raidstrats.gg", "https://raidstrats.gg", "Animated raid planner — timeline-sequenced mechanics, movement paths, and tethers, shareable as a link with no account needed.", "Raid"),
     ("WoW Raid Planner", "https://wowraidplanner.com", "Free roster, signup, and attendance tracker for guild raid teams.", "Raid"),
+    ("WoWUtils", "https://wowutils.com", "Free raid-team toolset: timeline cooldown/assignment planning exported to NSRT, roster auditing, droptimizer-backed loot wishlists, and an MRT note generator.", "Both"),
     ("Wago.io", "https://wago.io", "Import/hosting hub for addon strings and UI packs.", "Both"),
     ("wow-achievement-plan.com", "https://wow-achievement-plan.com", "Ranks every uncompleted achievement by time-to-done, with season deadlines flagged.", "Both"),
     ("Wowhead Talent Calculator", "https://www.wowhead.com/talent-calc", "Build, save, and share full Midnight talent loadouts including hero talents.", "Both"),
@@ -202,9 +205,9 @@ sites_planning = [
 ]
 
 sites_body = (
-    subsection("GROUP 01", "Logs &amp; performance analysis", "Where a pull actually went wrong.", table3("6 sites", sites_logs))
-    + subsection("GROUP 02", "Gearing &amp; simulation", "What to equip and where to farm it.", table3("9 sites", sites_gearing))
-    + subsection("GROUP 03", "Planning &amp; reference", "Routes, rosters, talents, and API tracking.", table3("11 sites", sites_planning))
+    subsection("GROUP 01", "Logs &amp; performance analysis", "Where a pull actually went wrong.", table3(f"{len(sites_logs)} sites", sites_logs))
+    + subsection("GROUP 02", "Gearing &amp; simulation", "What to equip and where to farm it.", table3(f"{len(sites_gearing)} sites", sites_gearing))
+    + subsection("GROUP 03", "Planning &amp; reference", "Routes, rosters, talents, and API tracking.", table3(f"{len(sites_planning)} sites", sites_planning))
 )
 sites_total = len(sites_logs) + len(sites_gearing) + len(sites_planning)
 
@@ -248,6 +251,8 @@ cheats_total = len(cheats)
 videos = [
     ("Midnight S2 M+ Healer Survival Guide", "https://youtu.be/HP20FYYNn88", "Healer-focused strategy for Season 2 Mythic+.", "Both"),
     ("AWOWLab Overview", "https://youtu.be/EQqjasuxq1g", "Walkthrough of what AwowLab does and how to use it — see Desktop Tools.", "Both"),
+    ("Ready Check Pull", "https://www.youtube.com/@ReadyCheckPull", "Channel of high-quality, regularly updated raid boss guides for every difficulty.", "Raid"),
+    ("Vashnik the Malignant — Heroic/Normal Guide", "https://www.youtube.com/watch?v=TV6iLpTiLAY", "Ready Check Pull's boss guide for Vashnik in the Venomous Abyss, patch 12.1.", "Raid"),
 ]
 videos_body = single(table3(f"{len(videos)} videos", videos))
 videos_total = len(videos)
